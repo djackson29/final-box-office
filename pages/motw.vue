@@ -2,18 +2,18 @@
   <main class="main">
 
     <!-- grid row with one column for title of page -->
-    <div class="row">
-      <div class="col">
+    <!-- <div class="row">
+      <div class="col"> -->
         <h2>Movie of the Week Archives</h2>
-        <div v-if="moviesAPI">
+
           <card
-            v-for="movie of moviesAPI"
-            :key="movie.id"
+            v-for="movie in moviesAPI"
+            v-bind:key="movie.id"
             :movie="movie"
           />
-        </div>
-      </div>
-    </div>
+
+      <!-- </div>
+    </div> -->
 
     <!-- grid row with 3 columns for main content of page -->
     <!-- <div class="row"> -->
