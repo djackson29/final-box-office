@@ -1,7 +1,7 @@
 <script>
 export default {
   props: {
-    country: Object
+    movie: Object
   }
 }
 </script>
@@ -12,8 +12,8 @@ export default {
   <p class="card__copy">{{ country.genre }}</p>
   <p class="card__copy">{{ country.plot }}</p>
   <p class="card__copy">{{ country.rated }}</p> -->
-  <h2 class="card__title">{{ country.name.common }}</h2>
-  <p class="card__copy">{{ country.subregion }}</p>
+  <h2 class="card__title">{{ movie.title }}</h2>
+  <!-- <p class="card__copy">{{ country.subregion }}</p> -->
 
 </div>
 </template>

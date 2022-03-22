@@ -5,11 +5,11 @@
     <div class="row">
       <div class="col">
         <h2>Movie of the Week Archives</h2>
-        <div v-if="countries">
+        <div v-if="moviesAPI">
           <card
-            v-for="country of countries"
-            :key="country.id"
-            :country="country"
+            v-for="movie of moviesAPI"
+            :key="movie.id"
+            :movie="movie"
           />
         </div>
       </div>
@@ -52,14 +52,14 @@ export default {
   data() {
     return {
       loading: true,
-      countries: null,
+      moviesAPI: null,
       errored: false
     }
   },
   mounted () {
   axios
-    .get('https://restcountries.com/v3.1/region/europe')
-    .then(response => (this.countries = response.data))
+    .get('https://www.omdbapi.com/?i=tt1201607&apikey=d36f6554')
+    .then(response => (this.moviesAPI = response.data))
     .catch(error => {
       console.log(error)
       this.errored = true
