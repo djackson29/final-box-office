@@ -6,8 +6,7 @@
   <h2>What to Watch</h2>
 
   <!-- v-for to iterate through the movies object -->
-  <div v-for="movie in movies" v-bind:key="movie.id">
-
+  <div v-for="movie in movies" v-bind:key="movie.id" >
     <!-- populate headings and paragraphs with movies object data -->
     <h3>{{ movie.name }}</h3>
     <p>{{ movie.about }}</p>
@@ -21,20 +20,26 @@
 
     <!-- else it shows a message that tells user to click the button -->
     <div v-else>
-      <p>{{msg}}</p>
+      <p>{{ msg }}</p>
     </div>
   </div>
+
 </div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <script scoped>
+import buttonComponent from '~/components/button.vue'
+
 export default {
   name: 'boxOfficeBits',
   data() {
     return {
       show: false,
       msg: 'Click the button above to learn more about the films!',
+      components: {
+        buttonComponent
+      },
 
       // movies object for 'what to watch' section
       movies: [{
