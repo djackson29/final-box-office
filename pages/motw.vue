@@ -1,25 +1,21 @@
 <template>
-  <main class="main">
+<main class="main">
 
-    <!-- grid row with one column for title of page -->
-    <!-- <div class="row">
+  <!-- grid row with one column for title of page -->
+  <!-- <div class="row">
       <div class="col"> -->
-        <h2>Movie of the Week Archives</h2>
-
-          <card
-            v-for="movie in moviesAPI"
-            v-bind:key="movie.id"
-            :movie="movie"
-          />
-
-      <!-- </div>
+  <h2>Movie of the Week Archives</h2>
+  <div>
+    <card v-for="movie in moviesAPI" v-bind:key="movie.id" :movie="moviesAPI" />
+  </div>
+  <!-- </div>
     </div> -->
 
-    <!-- grid row with 3 columns for main content of page -->
-    <!-- <div class="row"> -->
+  <!-- grid row with 3 columns for main content of page -->
+  <!-- <div class="row"> -->
 
-      <!-- v-for to iterate through the placeholder array and populate each column with placeholder content -->
-      <!-- <div class="col-lg">
+  <!-- v-for to iterate through the placeholder array and populate each column with placeholder content -->
+  <!-- <div class="col-lg">
         <div v-for="placeholder in placeholderContent" v-bind:key="placeholder.id">
           <p>{{placeholder}}</p>
         </div>
@@ -35,7 +31,7 @@
         </div>
       </div>
     </div> -->
-  </main>
+</main>
 </template>
 
 
@@ -56,18 +52,17 @@ export default {
       errored: false
     }
   },
-  mounted () {
-  axios
-    .get('https://www.omdbapi.com/?i=tt1201607&apikey=d36f6554')
-    .then(response => (this.moviesAPI = response.data))
-    .catch(error => {
-      console.log(error)
-      this.errored = true
-    })
-    .finally(() => this.loading = false)
+  mounted() {
+    axios
+      .get('https://www.omdbapi.com/?i=tt1201607&apikey=d36f6554')
+      .then(response => (this.moviesAPI = response.data))
+      .catch(error => {
+        console.log(error)
+        this.errored = true
+      })
+      .finally(() => this.loading = false)
   }
 }
-
 </script>
 
 
