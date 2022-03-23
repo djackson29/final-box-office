@@ -11,11 +11,13 @@
       <nuxt-link to="/discoverTitles">Discover New Titles</nuxt-link> |
       <nuxt-link to="/motw">Movie of the Week</nuxt-link>
     </nav>
+    <hr>
 
     <!-- populate area between main nav and footer with content from /pages files  -->
     <Nuxt />
 
     <!-- footer -->
+    <hr>
     <footer>
 
       <!-- 2 column grid layout for footer links -->
@@ -102,6 +104,10 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #8C4CCD;
+}
+
+hr {
+    border: 1px solid black;
 }
 
 footer {
