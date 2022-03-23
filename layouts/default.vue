@@ -67,7 +67,7 @@ export default {
         link1: 'Coming Soon',
         linku1: '/comingSoon',
         link2: 'Archives',
-        linku2: '/movieWeek'
+        linku2: '/motw'
       }],
       socialLinks: [{
         name: 'Follow Us',
@@ -108,6 +108,10 @@ nav a.router-link-exact-active {
 
 hr {
     border: 1px solid black;
+}
+
+nuxt-link {
+
 }
 
 footer {
