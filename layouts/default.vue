@@ -25,20 +25,9 @@
         <hr>
         <div class="col-sm">
 
-          <!-- v-for to iterate through quick links object -->
-          <div v-for="quick in quickLinks" v-bind:key="quick.id">
-            <h3>{{ quick.name }}</h3>
-            <ul>
-              <li><a v-bind:href="quick.linku1">{{ quick.link1 }}</a></li>
-              <li><a v-bind:href="quick.linku2">{{ quick.link2 }}</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm">
-
           <!-- v-for to iterate through social links object -->
           <div v-for="social in socialLinks" v-bind:key="social.id">
-            <h3>{{ social.name }}</h3>
+            <h4>{{ social.name }}</h4>
             <ul>
               <li><a v-bind:href="social.linku1" target="_blank">{{ social.link1 }}</a></li>
               <li><a v-bind:href="social.linku2" target="_blank">{{ social.link2 }}</a></li>
@@ -46,6 +35,19 @@
             </ul>
           </div>
         </div>
+        
+        <div class="col-sm">
+
+          <!-- v-for to iterate through quick links object -->
+          <div v-for="quick in quickLinks" v-bind:key="quick.id">
+            <h4>Box Office Bits Contributors</h4>
+            <ul>
+              <li>Site Author: Danika Jackson</li>
+              <li>Collaborators: Steven Speicher and UW staff</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </footer>
   </div>
