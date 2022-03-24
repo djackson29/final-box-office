@@ -20,14 +20,11 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  margin: 10px 0;
-  // padding: 10px 0;
+  background-color: #E0E8F9;
+  border: none;
   &__title {
     font-size: 1.5rem;
-    padding: 20px 10px 0 10px;
-  }
-  &__copy {
-    padding: 0 10px;
+    margin-top: 10px;
   }
 }
 #motw-img {
