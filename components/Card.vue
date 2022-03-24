@@ -9,9 +9,9 @@ export default {
 <template>
 <div class="card">
   <h2 class="card__title">{{ movie.Title }}</h2>
-  <p class="card__copy">{{ movie.Rated }} | {{ movie.Genre }}</p>
-  <p class="card__copy">{{ movie.Plot }}</p>
-  <img id="motw-img" src="http://img.omdbapi.com/?i=tt1201607&apikey=d36f6554" class="img-fluid">
+  <p class="card__copy">{{ movie.Year }} | Type: {{ movie.Type }}</p>
+  <!-- <p class="card__copy">{{ movie.Type }}</p> -->
+  <img id="motw-img" :src="movie.Poster" class="img-fluid">
 
 </div>
 </template>
