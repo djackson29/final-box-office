@@ -66,7 +66,7 @@ export default {
         name: 'Quick Links',
         link1: 'Coming Soon',
         linku1: '/comingSoon',
-        link2: 'Archives',
+        link2: 'Movie of the Week',
         linku2: '/motw'
       }],
       socialLinks: [{

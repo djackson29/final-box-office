@@ -9,10 +9,9 @@ export default {
 <template>
 <div class="card">
   <h2 class="card__title">{{ movie.Title }}</h2>
-  <p class="card__copy">{{ movie.Year }} | Type: {{ movie.Type }}</p>
-  <!-- <p class="card__copy">{{ movie.Type }}</p> -->
+  <p class="card__copy">{{ movie.Year }}</p>
   <img id="motw-img" :src="movie.Poster" class="img-fluid">
-
+  <p class="card__copy"> <a v-bind:href="'https://www.imdb.com/title/'+movie.imdbID" target="_blank">More information about <em><strong>{{ movie.Title }}</strong></em> on IMDB</a></p>
 </div>
 </template>
 

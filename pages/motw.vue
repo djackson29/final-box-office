@@ -4,14 +4,15 @@
   <!-- grid row with one column for title of page and API data-->
   <div class="row">
     <div class="col">
-      <h2>Movie of the Week Archives</h2>
-        <div v-if="moviesAPI">
-          <card
-            v-for="movie of moviesAPI"
-            v-bind:key="movie.id"
-            :movie="movie"
-          />
-        </div>
+      <h2>Movie of the Week</h2>
+      <p>This week, instead of just one movie, we are highlighting the entire epic Harry Potter series.</p>
+      <div v-if="moviesAPI">
+        <card
+          v-for="movie of moviesAPI"
+          v-bind:key="movie.id"
+          :movie="movie"
+        />
+      </div>
     </div>
   </div>
 
