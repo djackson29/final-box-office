@@ -85,12 +85,6 @@ export default {
 
 
 <style lang="scss">
-// variables for colors
-$primaryYellow: hsl(48, 100%, 88%);
-$secondaryCyan: hsl(185, 57%, 50%);
-$text: #27241D;
-
-// mixins to style the body text and headings
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -118,6 +112,7 @@ h2 {
 h3 {
   font-family: sans-serif;
   font-size: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 nav {
@@ -126,7 +121,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #035388;
 }
 
 nav a.router-link-exact-active {
@@ -136,9 +131,11 @@ nav a.router-link-exact-active {
 hr {
     border: 1px solid black;
 }
-
-nuxt-link {
-
+.body-hr {
+  max-width: 75%;
+  text-align: center;
+  border: .5px solid #647ACB;
+  margin: 10px 0;
 }
 
 footer {

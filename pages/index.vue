@@ -1,6 +1,6 @@
 <template>
 <div class="index">
-  <h2>About Box Office Bits</h2>
+  <h1>About Box Office Bits</h1>
   <p>Welcome to Box Office Bits! The ultimate movie lover's online guide.</p>
   <p>Whether you are looking for a new title to fall in love with, or curious how others feel about the newest releases, you have come to the right place!</p>
   <h2>What to Watch</h2>
@@ -30,6 +30,8 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+
 
 </style>

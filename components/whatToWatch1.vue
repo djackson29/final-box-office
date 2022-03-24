@@ -31,3 +31,21 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+button {
+  background-color: #647ACB;
+  box-shadow: inset 0 3px 0 #98aeeb, 0 1px 1px hsla(0, 0%, 0%, .2);
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, .75), 0 5px 0 hsla(0, 0%, 100%, .15);
+  }
+}
+</style>
