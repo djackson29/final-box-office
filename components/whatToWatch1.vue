@@ -1,9 +1,11 @@
 <template>
+<!-- data and button component for right column of home page -->
 <div class="button-component">
   <h3>{{ name }}</h3>
   <p>{{ about }}</p>
   <p>{{ hook }}</p>
   <p><button type="button" name="button" v-on:click="show = !show">Did you Know?</button></p>
+
   <!-- if button is clicked it will show a fun fact about each movie -->
   <div v-if="show">
     <p>{{ fact }}</p>
@@ -32,6 +34,7 @@ export default {
 }
 </script>
 
+<!-- button styling for this component only -->
 <style lang="scss" scoped>
 button {
   background-color: #647ACB;

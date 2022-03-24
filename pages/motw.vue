@@ -6,6 +6,8 @@
     <div class="col">
       <h1>Movie of the Week</h1>
       <p>This week, we are highlighting the entire epic Harry Potter series.</p>
+
+      <!-- iterate though moviesAPI data if it is present -->
       <div v-if="moviesAPI">
         <card
           v-for="movie of moviesAPI"
@@ -21,6 +23,7 @@
 
 
 <script>
+// import axios and Card component
 import axios from 'axios'
 import Card from '~/components/Card.vue'
 
@@ -36,6 +39,8 @@ export default {
       errored: false
     }
   },
+
+  // get API data
   mounted() {
     axios
       .get('https://www.omdbapi.com/?s=harry+potter&apikey=d36f6554')
@@ -53,9 +58,3 @@ export default {
   }
 }
 </script>
-
-
-
-<style lang="scss">
-
-</style>

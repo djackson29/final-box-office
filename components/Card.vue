@@ -7,6 +7,7 @@ export default {
 </script>
 
 <template>
+<!-- card component, returning 4 data points from OMDB API: title, year, poster, and imdbID -->
 <div class="card">
   <h2 class="card__title">{{ movie.Title }}</h2>
   <p class="card__copy">{{ movie.Year }}</p>
@@ -17,7 +18,7 @@ export default {
 </template>
 
 
-
+<!-- styling for card component and images -->
 <style lang="scss" scoped>
 .card {
   background-color: #E0E8F9;

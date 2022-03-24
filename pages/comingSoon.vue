@@ -86,7 +86,7 @@
 
 <!-- Add "scoped"attribute to limit CSS to this component only -->
 <script scoped>
-// created object for each week, includes movie names, summaries, and genre(s)
+// created object for each week, includes movie names, summaries, genre(s), and an image
 export default {
   name: 'comingSoon',
   data() {
