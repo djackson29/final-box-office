@@ -85,12 +85,39 @@ export default {
 
 
 <style lang="scss">
+// variables for colors
+$primaryYellow: hsl(48, 100%, 88%);
+$secondaryCyan: hsl(185, 57%, 50%);
+$text: #27241D;
+
+// mixins to style the body text and headings
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   padding: 0 10rem;
+  background-color: #E0E8F9;
+  color: #27241D;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
 }
 
 nav {

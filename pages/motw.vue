@@ -6,7 +6,11 @@
     <div class="col">
       <h2>Movie of the Week Archives</h2>
         <div v-if="moviesAPI">
-          <card v-for="movie of moviesAPI" v-bind:key="movie.id" :movie="moviesAPI" />
+          <card
+            v-for="movie of moviesAPI"
+            v-bind:key="movie.id"
+            :movie="moviesAPI"
+          />
         </div>
     </div>
   </div>

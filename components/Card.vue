@@ -12,8 +12,6 @@ export default {
   <p class="card__copy">{{ movie.Rated }} | {{ movie.Genre }}</p>
   <p class="card__copy">{{ movie.Plot }}</p>
   <img id="motw-img" src="http://img.omdbapi.com/?i=tt1201607&apikey=d36f6554" class="img-fluid">
-  <!-- <h2 class="card__title">{{ movie.name.common }}</h2> -->
-  <!-- <p class="card__copy">{{ movie.subregion }}</p> -->
 
 </div>
 </template>

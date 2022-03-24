@@ -127,3 +127,10 @@
     }
   }
 </script>
+
+<style lang="scss">
+b-card-body {
+  background-color: hsl(48, 100%, 88%);
+}
+
+</style>
