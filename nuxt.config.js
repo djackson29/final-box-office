@@ -4,11 +4,11 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'final-box-office',
+    title: "Box Office Bits: movie lover's guide",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: "The ultimate movie lover's online guide. Looking for a new title to fall in love with, or curious how others feel about the newest releases? You have come to the right place!" },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
