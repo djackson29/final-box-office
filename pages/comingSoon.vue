@@ -149,6 +149,21 @@ export default {
         }
       ]
     }
+  },
+
+  // metadata
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Coming Soon to Theaters page on Box Office Bits. Find out which movies are being released in theaters in the next few weeks.'
+        }
+      ]
+    }
   }
 }
 </script>

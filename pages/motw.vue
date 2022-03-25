@@ -9,11 +9,7 @@
 
       <!-- iterate though moviesAPI data if it is present -->
       <div v-if="moviesAPI">
-        <card
-          v-for="movie of moviesAPI"
-          v-bind:key="movie.id"
-          :movie="movie"
-        />
+        <card v-for="movie of moviesAPI" v-bind:key="movie.id" :movie="movie" />
       </div>
     </div>
   </div>
@@ -37,6 +33,21 @@ export default {
       loading: true,
       moviesAPI: null,
       errored: false
+    }
+  },
+
+  // metadata
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Movie of the Week page on Box Office Bits. We highlight a different movie each week and reveal fun facts about the film.'
+        }
+      ]
     }
   },
 

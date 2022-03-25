@@ -32,6 +32,21 @@ export default {
       musicalPosters: [require('../assets/greatest-showman.jpg'), require('../assets/hamilton.jpeg'), require('../assets/west-side.jpg')],
       thrillerPosters: [require('../assets/jaws.jpg'), require('../assets/joker.jpeg'), require('../assets/lambs.jpg')]
     }
+  },
+
+  // metadata
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Discover New Titles page on Box Office Bits. Find new movies to fall in love with.'
+        }
+      ]
+    }
   }
 }
 

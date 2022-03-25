@@ -29,6 +29,21 @@ export default {
   components: {
     watch1,
     watch2
+  },
+
+  // metadata
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Box Office Bits home page. Learn about Box Office Bits and see movie suggestions.'
+        }
+      ]
+    }
   }
 }
 </script>
